@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGov</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Full Background Image Section -->
+    <header class="bg-image">
+        <!-- Navbar -->
+        <nav id="mainNavbar" class="navbar navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">
+                    <img src="media/map (1).png" alt="MyGov Logo" width="40">
+                    <img src="media/mygov.png" alt="MyGov Logo" width="100">
+                   
+                </a>
+                <div class="d-flex">
+                    <button class="btn btn-light ">বাংলা</button>
+                    <button class="btn btn-light me-2">ENG</button>
+                    <button class="btn btn-light me-2">হেল্প ডেস্ক</button>
+                    <button class="d-none d-sm-inline-block login btn fs-8 btn-outline-success py-0 px-1 px-sm-3 px-md-4 me-1 me-sm-3 btn-custom" data-bs-toggle="modal" data-bs-target="#loginModal" tabindex="0">লগইন করুন</button>
+                    <button class="d-none d-sm-inline-block btn fs-8 btn-success py-0 px-1 px-sm-3 px-md-4 btn-custom" tabindex="0">রেজিস্ট্রেশন</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section text-center text-light">
+            <div class="container">
+                <h1>এক ঠিকানায় সরকারি সেবা</h1>
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="সেবা অনুসন্ধান করুন">
+                    <button class="btn btn-success">অনুসন্ধান</button>
+                </div>
+                <a href="#" class="text-dark mt-3">আবেদনের সর্বশেষ অবস্থা দেখুন</a>
+            </div>
+        </section>
+
+    </header>
+
+      <!-- Section start sheba -->
+      <section class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-12  text-center mb-3 btnt">
+                    
+                    <button id="rr" class="btn active">সেবা খাত ভিত্তিক</button>
+                    <button class="btn1">মন্ত্রণালয়/দপ্তর ভিত্তিক</button>
+                    <button class="btn1">সেবাগ্রহীতা অনুসারে</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- First Row Sheba-->
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/probashi.png" height="50" alt="">
+                            <p class="card-text mt-2">মাইগভ-ফর প্রবাসী</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/license.png" height="50" alt="">
+                            <p class="card-text mt-2">নিবন্ধন ও লাইসেন্স</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/krishi.png" height="50" alt="">
+                            <p class="card-text mt-2">কৃষি</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/personal.png" height="50" alt="">
+                            <p class="card-text mt-2">ব্যক্তিগত আবেদন</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- 2nd Row Sheba-->
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4 ">
+                        <div class="col-12 p-2 mb-5 mt-3 r-4 text-center serviceIcon">
+                            <img src="media/sonod.png" height="50" alt="">
+                            <p class="card-text mt-2">সনদ, প্রত্যয়ন, অনাপত্তি ও অনুমতি</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/loan.png" height="50" alt="">
+                            <p class="card-text mt-2">অনুদান, ভাতা ও ঋণ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-center rounded-4">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/education.png" height="50" alt="">
+                            <p class="card-text mt-2">শিক্ষা</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 bg-white justify-content-center align-self-center text-center">
+                    <div class="border rounded-15 mb-3 mb-md-4 service_list justify-content-center align-self-centerrounded-4 ">
+                        <div class="col-12 p-2 mb-5 mt-3 text-center serviceIcon">
+                            <img src="media/filed.png" height="50" alt="">
+                            <p class="card-text mt-2">ভূমি ও ইজারা</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- Popular Sheba-->
+
+        <div class="coustom bg-light py-5 let">
+            <div class="container">
+                <div class="col-md-12 titl mb-5">
+                    <h2 style="color: #1D4943;" class="text-center ">জনপ্রিয় সেবা সমূহ</h2>
+                </div>
+    
+                <!-- First Row -->
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-left border-light">
+                            <div class="card-body">
+                                <i class="fas fa-file-pdf fa-lg text-primary mb-3 hover-effect d-inline"></i>
+                                <p class="card-text d-inline fw-bold">বিটিআরসি আবেদন (BTRC Application)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center border-light">
+                            <div class="card-body mb-5">
+                                <i class="fas fa-file-pdf fa-lg text-primary mb-3 hover-effect d-inline"></i>
+                                <p class="card-text d-inline fw-bold">জাতীয় ভোক্তা অধিকার অভিযোগ ফরম</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-left border-light">
+                            <div class="card-body">
+                                <i class="fas fa-file-pdf fa-lg text-primary  hover-effect d-inline"></i>
+                                <p class="card-text d-inline fw-bold">অসচ্ছল হিন্দু ধর্মাবলম্বী ছাত্র-ছাত্রীদের বৃত্তি </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Row -->
+                <div class="row g-4 mt-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-left border-light ">
+                            <div class="card-body mb-5">
+                                <i class="fas fa-file-pdf fa-lg text-primary mb-3 hover-effect "></i>
+                                <p class="card-text d-inline fw-bold ">সাধারণ আবেদন
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-left border-light">
+                            <div class="card-body mb-5">
+                                <i class="fas fa-file-pdf fa-lg text-primary mb-3 hover-effect d-inline"></i>
+                                <p class="card-text d-inline fw-bold">আম মোক্তারনামা সত্যায়নের জন্য আবেদন</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-left border-light">
+                            <div class="card-body">
+                                <i class="fas fa-file-pdf fa-lg text-primary mb-3 hover-effect d-inline"></i>
+                                <p class="card-text d-inline fw-bold left">কৃষি উপকরণ সহায়তা কার্ড প্রাপ্তির আবেদন</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      <!-- Youtube Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">টিউটোরিয়াল</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/OmLlTJniTvc?si=m7VqpdMRwBhe8MP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <h5 class="card-title mt-3">মাইগভে সেবার জন্যে আবেদন (আর্থিক অনুদান শিক্ষা মন্ত্রণালয়)</h5>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/USBHGvINlqs?si=lGe49R-GymAxhZZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <h5 class="card-title mt-3">মাই গভ পরিচিতি</h5>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/JepVRvx5bvE?si=99mf7mC81cuBg2Zb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <h5 class="card-title mt-3">সকল সরকারি সেবা এখন হাতের মুঠোয়</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="text-center mt-4 btn-success">
+                    <button class="btn btn-success" id="btnB">সকল টিউটোরিয়াল দেখুন</button>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Help Section -->
+<section class="py-5" style="background-color: #0d914610;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 style="color: #1D4943; font-weight: 800;">মাইগভ কীভাবে কাজ করে</h2>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <img src="media/registration.png" alt="Step 1" class="img-fluid">
+                <p class="mt-3 text-success">ধাপ ১</p>
+                <h5 class="text-dark" style="font-weight: 600;">ফ্রি রেজিস্ট্রেশন করুন</h5>
+                <p class="text-muted">মাইগভ প্লাটফর্মে রেজিঃ করে আপনার প্রোফাইলে প্রয়োজনীয় তথ্যাদি যোগ করুন।</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="media/services1.png" alt="Step 2" class="img-fluid">
+                <p class="mt-3 text-success">ধাপ ২</p>
+                <h5 class="text-dark" style="font-weight: 600;">কাঙ্ক্ষিত সার্ভিসটি আবেদন করুন</h5>
+                <p class="text-muted">সেবাখাত থেকে আপনার দরকারি সেবাটি নির্বাচন করে প্রয়োজনীয় তথ্যাদি প্রদান করে আবেদনটি দাখিল করুন।</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="media/application.png" alt="Step 3" class="img-fluid">
+                <p class="mt-3 text-success">ধাপ ৩</p>
+                <h5 class="text-dark" style="font-weight: 600;">আবেদনের সর্বশেষ অবস্থা জানুন</h5>
+                <p class="text-muted">আপনি আবেদনের চলতি অবস্থা দেখতে পারবেন এবং আপনার ইমেইল ও ফোনে পৌঁছে যাবে আবেদনের সকল আপডেট।</p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+     <!-- Call Section -->
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="help-card bg-white p-3">
+                        <h5>কল করুন</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div>
+                                    <span class="fw-bold">333</span><br>
+                                    <small>সরকারি তথ্য ও সেবা</small>
+                                </div>
+                                <i class="bi bi-telephone icon-phone"></i>
+                            </li>
+                            <li class="list-group-item">
+                                <div>
+                                    <span class="fw-bold">999</span><br>
+                                    <small>জরুরি সেবা</small>
+                                </div>
+                                <i class="bi bi-telephone icon-phone"></i>
+                            </li>
+                            <li class="list-group-item">
+                                <div>
+                                    <span class="fw-bold">+8809678785786</span><br>
+                                    <small>মাইগভ সংক্রান্ত যেকোনো সমস্যা / অভিযোগ</small>
+                                </div>
+                                <i class="bi bi-telephone icon-phone"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="media/call.png" alt="Help Desk" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+
+
+     <!-- Question Section -->
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="faq-card bg-white p-3">
+                        <h5>সচরাচর জিজ্ঞাসা</h5>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        রেজিস্ট্রেশন ভিত্তিক সেবার আবেদন করা যাবে কি না?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        মাইগভ সেবার আবেদন করতে হলে মোবাইল নম্বর ব্যবহার করে রেজিস্ট্রেশন করতে হবে। রেজিস্ট্রেশনের সময় প্রোফাইলে (প্রাসঙ্গিক তথ্য) প্রদান করা হবে এবং পরবর্তীতে সেবার আবেদন ফরমে সেইসব তথ্য পুনরায় দেওয়ার প্রয়োজন হবে না।
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        অন্য কারো পক্ষে সেবার আবেদন করার সুযোগ আছে কি না?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        মাইগভ সেবার আবেদন করতে হলে মোবাইল নম্বর ব্যবহার করে রেজিস্ট্রেশন করতে হবে। রেজিস্ট্রেশনের সময় প্রোফাইলে (প্রাসঙ্গিক তথ্য) প্রদান করা হবে এবং পরবর্তীতে সেবার আবেদন ফরমে সেইসব তথ্য পুনরায় দেওয়ার প্রয়োজন হবে না।
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="media/question.png" alt="FAQ Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+     <!-- Footer Section -->
+
+        <footer class="bg-light py-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>বিবিধ</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">আমাদের সর্বশেষ অবস্থা</a></li>
+                            <li><a href="#">আবেদনের সততা যাচাই করুন</a></li>
+                            <li><a href="#">সচরাচর জিজ্ঞাসা</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>আইনগত</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">পরিবেশের শর্তাবলী</a></li>
+                            <li><a href="#">প্রেস ডেক্স</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>যোগাযোগ</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="mailto:support@mygov.bd">support@mygov.bd</a></li>
+                            <li><a href="tel:+8809678785786">+8809678785786</a></li>
+                            <i class="fa-brands fa-facebook-f "></i>
+                            <i class="fa-brands fa-youtube m-2"></i>
+                            <i class="fa-brands fa-twitter m-2z"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            
+                        </ul>
+                        <div>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
